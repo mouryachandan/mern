@@ -6,7 +6,7 @@ function App(){
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/users");
+        const response = await axios.get("https://mern-lvo5.onrender.com");
         setUsers(response.data);
       } catch (error) {
         console.error("Error fetching users:", error);
